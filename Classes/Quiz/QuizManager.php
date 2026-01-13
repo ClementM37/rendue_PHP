@@ -5,6 +5,7 @@ namespace Quiz;
 use Provider\DataLoaderJson;
 use Quiz\Question;
 use Quiz\QuestionChoixMultiple;
+use Quiz\QuestionChoixMultipleCheckbox;
 use Quiz\QuestionOuverture;
 
 class QuizManager
@@ -49,6 +50,18 @@ class QuizManager
                     return null;
                 }
                 return new QuestionChoixMultiple(
+                    $data['id'],
+                    $data['intitule'],
+                    $data['points'],
+                    $data['choix'],
+                    $data['reponse']
+                );
+
+            case 'choix_multiple_checkbox':
+                if (!isset($data['choix'], $data['reponse']) || !is_array($data['reponse'])) {
+                    return null;
+                }
+                return new QuestionChoixMultipleCheckbox(
                     $data['id'],
                     $data['intitule'],
                     $data['points'],

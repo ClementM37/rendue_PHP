@@ -3,53 +3,56 @@
         {
             "id": 1,
             "type": "choix_multiple",
-            "intitule": "",
-            "points": 10,
-            "choix": ["CSS", "HTML", "JavaScript", "PHP"],
-            "reponse": 1
+            "intitule": "Quel est l'objectif d'un ippon en judo ?",
+            "points": 15,
+            "choix": ["Projeter l'adversaire et le maîtriser", "Gagner du temps", "Obtenir une pénalité", "Marquer un point partiel"],
+            "reponse": 0
         },
         {
             "id": 2,
-            "type": "choix_multiple",
-            "intitule": "",
+            "type": "choix_multiple_checkbox",
+            "intitule": "Quelles sont des techniques de projection (nage-waza) ?",
             "points": 15,
-            "choix": [
-                "Programmation Orientée Objet",
-                "Programmation Ouverte Optimisée",
-                "Processus Orienté Organisation",
-                "Programme Ouvert Online"
-            ],
-            "reponse": 0
+            "choix": ["Seoi-nage", "Juji-gatame", "O-soto-gari", "Kesa-gatame"],
+            "reponse": [0,2]
         },
         {
             "id": 3,
             "type": "ouverture",
-            "intitule": "",
-            "points": 20,
-            "reponse": "$_POST"
+            "intitule": "Comment appelle-t-on l'uniforme de judo ?",
+            "points": 10,
+            "reponse": "judogi"
         },
         {
             "id": 4,
             "type": "choix_multiple",
-            "intitule": "",
-            "points": 10,
-            "choix": ["GET", "POST", "PUT", "DELETE"],
+            "intitule": "Combien de temps dure un combat senior en compétition (réglementaire) ?",
+            "points": 15,
+            "choix": ["3 minutes", "4 minutes", "5 minutes", "6 minutes"],
             "reponse": 1
         },
         {
             "id": 5,
-            "type": "ouverture",
-            "intitule": "",
+            "type": "choix_multiple",
+            "intitule": "Que désigne le terme 'tatami' ?",
             "points": 15,
-            "reponse": "class"
+            "choix": ["Le tapis de pratique", "La ceinture", "La technique de soumission", "La tenue"],
+            "reponse": 0
         },
         {
             "id": 6,
-            "type": "choix_multiple",
-            "intitule": "",
+            "type": "ouverture",
+            "intitule": "Comment nomme-t-on un grade de ceinture noire en judo (mot court) ?",
+            "points": 20,
+            "reponse": "dan"
+        },
+        {
+            "id": 7,
+            "type": "choix_multiple_checkbox",
+            "intitule": "Parmi les propositions suivantes, lesquelles sont des techniques d'immobilisation (osae-komi) ?",
             "points": 10,
-            "choix": [".", "->", "::", "=>"],
-            "reponse": 1
+            "choix": ["Kesa-gatame", "Ude-hishigi-juji-gatame", "Yoko-shiho-gatame", "Ura-nage"],
+            "reponse": [0,2]
         }
     ]
 }

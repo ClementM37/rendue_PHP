@@ -4,14 +4,20 @@ require_once __DIR__ . '/../Classes/autoloader.php';
 
 use Quiz\QuizManager;
 
-// Vérifier que le quiz existe en session
+// Vérifier que le quiz existe en session; si non, recréer le quiz depuis le modèle
 if (!isset($_SESSION['quiz'])) {
-    header('Location: ../index.php');
-    exit;
+    try {
+        $quiz = new QuizManager(__DIR__ . '/../Data/model.json');
+        $_SESSION['quiz'] = serialize($quiz);
+    } catch (Exception $e) {
+        // Si la création échoue, rediriger vers l'accueil
+        header('Location: ../index.php');
+        exit;
+    }
+} else {
+    // Récupérer le quiz depuis la session
+    $quiz = unserialize($_SESSION['quiz']);
 }
-
-// Récupérer le quiz
-$quiz = unserialize($_SESSION['quiz']);
 
 // Évaluer les réponses
 $resultats = $quiz->evaluerReponses($_POST);
@@ -30,7 +36,8 @@ $_SESSION['resultats'] = $resultats;
     <div class="score-card">
         <h2>Votre score</h2>
         <p><strong><?= $quiz->getScoreObtenu() ?> / <?= $quiz->getScoreTotal() ?> points</strong></p>
-        <p>Pourcentage : <?= $quiz->getPourcentage() ?>%</p>
+        <?php $nombreBonnes = count(array_filter($resultats, function($r) { return $r['correct']; })); $totalQuestions = count($quiz->getQuestions()); ?>
+        <p><strong><?= $nombreBonnes ?> / <?= $totalQuestions ?> bonnes réponses</strong></p>
     </div>
 
     <h2>Détail des réponses</h2>
