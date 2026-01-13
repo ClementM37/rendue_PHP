@@ -1,0 +1,55 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "type": "choix_multiple",
+            "intitule": "",
+            "points": 10,
+            "choix": ["CSS", "HTML", "JavaScript", "PHP"],
+            "reponse": 1
+        },
+        {
+            "id": 2,
+            "type": "choix_multiple",
+            "intitule": "",
+            "points": 15,
+            "choix": [
+                "Programmation Orientée Objet",
+                "Programmation Ouverte Optimisée",
+                "Processus Orienté Organisation",
+                "Programme Ouvert Online"
+            ],
+            "reponse": 0
+        },
+        {
+            "id": 3,
+            "type": "ouverture",
+            "intitule": "",
+            "points": 20,
+            "reponse": "$_POST"
+        },
+        {
+            "id": 4,
+            "type": "choix_multiple",
+            "intitule": "",
+            "points": 10,
+            "choix": ["GET", "POST", "PUT", "DELETE"],
+            "reponse": 1
+        },
+        {
+            "id": 5,
+            "type": "ouverture",
+            "intitule": "",
+            "points": 15,
+            "reponse": "class"
+        },
+        {
+            "id": 6,
+            "type": "choix_multiple",
+            "intitule": "",
+            "points": 10,
+            "choix": [".", "->", "::", "=>"],
+            "reponse": 1
+        }
+    ]
+}
