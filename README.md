@@ -1,12 +1,12 @@
 # rendue_PHP
 ---
-Consignes respectées:
+## Consignes respectées:
 - La génération et l'affichage du questionnaire dans une première vue (form.php par exemple)
 - l'affichage des résultats et du score dans une seconde vue (result.php par exemple)
   
 ---
 
-## Attentes
+### Attentes
 
 - utilisation de la POO et de ses concepts notamment l'héritage
 - organisation en namespace
@@ -17,7 +17,7 @@ Consignes respectées:
 
 ---
 
-## Petits plus
+### Petits plus
 - mise en place d'un contrôleur frontal ou routeur (aiguillage en fonction de l'action présente dans l'url)
 - enregistrement du score et du nom du user en bdd (utilisation de PDO et dbsqlite - 1 seule table - requête INSERT)
 - nouvelle vue pour afficher le tableau user/score (requete SELECT sur la table)
