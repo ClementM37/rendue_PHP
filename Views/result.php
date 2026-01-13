@@ -23,25 +23,6 @@ $_SESSION['resultats'] = $resultats;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz PHP - Résultats</title>
-    <style>
-        .correct {
-            background-color: #d4edda;
-            border-left: 4px solid #28a745;
-            padding: 15px;
-            margin: 10px 0;
-        }
-        .incorrect {
-            background-color: #f8d7da;
-            border-left: 4px solid #dc3545;
-            padding: 15px;
-            margin: 10px 0;
-        }
-        .score-card {
-            border: 2px solid #000;
-            padding: 20px;
-            margin: 20px 0;
-        }
-    </style>
 </head>
 <body>
     <h1>Résultats du Quiz</h1>
