@@ -1,19 +1,19 @@
 # rendue_PHP
 ---
 ## Consignes respectées:
-- La génération et l'affichage du questionnaire dans une première vue (form.php par exemple)
-- l'affichage des résultats et du score dans une seconde vue (result.php par exemple)
+- La génération et l'affichage du questionnaire dans une première vue (form.php par exemple)✅
+- l'affichage des résultats et du score dans une seconde vue (result.php par exemple)✅
   
 ---
 
 ### Attentes
 
-- utilisation de la POO et de ses concepts notamment l'héritage
-- organisation en namespace
-- utilisation de l'autoloader
-- utilisation de super variables telles que $_GET, $_POST et $_SESSION
-- utilisation d'un fichier json contenant les questions + provider
-- arborescence cohérente et soignée
+- utilisation de la POO et de ses concepts notamment l'héritage✅
+- organisation en namespace✅
+- utilisation de l'autoloader✅
+- utilisation de super variables telles que $_GET, $_POST et $_SESSION✅
+- utilisation d'un fichier json contenant les questions + provider✅
+- arborescence cohérente et soignée ✅
 
 ---
 
